@@ -28,6 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          <h2>Welcome to Purepoint Recipe Finder</h2>
         <SearchBar updatebox={this.updatebox} value={this.state.searchQuery} />
         <div className="SearchContainer">
           {this.state.searchList.map((recipeItem, i) => {
@@ -43,11 +44,9 @@ class App extends Component {
               </div>
             );
           })}
-          <h2>Welcome to Purepoint Recipe Finder</h2>
+        
         </div>
-        <p className="App-intro">
-          To get started, enter your desired recipe:
-        </p>
+      
       </div>
     );
   }

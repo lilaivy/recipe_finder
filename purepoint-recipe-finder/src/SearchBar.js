@@ -9,7 +9,7 @@ class SearchBar extends Component {
         e.preventDefault();
         updatebox(e.target.value);
       }}>
-        <input type="text" placeholder="Search Recipes/Ingredients Here"/>
+        <input type="text" placeholder="Search Recipes or Ingredients"/>
       </form>
     );
   }
