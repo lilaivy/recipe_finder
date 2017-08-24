@@ -1,17 +1,31 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.SearchContainer {
+  width: 70vw;
+  margin: 0 auto;
 }
 
-.App-intro {
-  font-size: large;
+.RecipeItemContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
 
+.RecipeItemContainer:hover{
+  background-color:darkgray;
+}
+
+.RecipePic {
+  height: 30px;
+  width: 30px;
+}
+
+.RecipeTiltle {
+  font-size: .75em;
+}
