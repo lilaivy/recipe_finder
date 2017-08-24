@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './SearchBar';
-import api from './api/api';
+import api from './API/api';
 
 class App extends Component {
   constructor() {
