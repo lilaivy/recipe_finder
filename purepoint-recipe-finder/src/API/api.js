@@ -5,10 +5,9 @@ export default {
     getLists: (searchQuery) => {
         return (
             request
-                .get(`http://www.recipepuppy.com/api/?q=${searchQuery}`)
+                .get('?q=omelet')
                 .set('Content-Type', 'application/json')
                 .then(res => JSON.parse(res.text) )
-                .then (console.log('searchQuery', searchQuery))
         );
     }
 }

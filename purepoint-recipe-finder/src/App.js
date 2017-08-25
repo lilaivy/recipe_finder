@@ -19,7 +19,8 @@ class App extends Component {
     let { searchQuery } = this.state;
     api.getLists(value)
       .then(res => {
-        this.setState({ searchList: res });
+        console.log('res', res)
+        this.setState({ searchList: res.results});
       })
       .catch(err => console.log(err));
   }
